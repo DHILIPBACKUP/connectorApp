@@ -1,0 +1,22 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.yourcompany.printerapp
+productName: PrinterApp
+icon: assets/icons/mobile.png
+publish:
+  provider: github
+  owner: DHILIPBACKUP
+  repo: electron
+  releaseType: release
+linux:
+  target:
+    - AppImage
+    - deb
+  category: Utility
+win:
+  target: nsis
+mac:
+  target: dmg
+files: []
+electronVersion: 36.4.0
